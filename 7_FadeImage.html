@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade Image</title>  <script src="js/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#fadeout").click(function () {
+                $("#kotak").fadeOut("slow");
+            });
+            $("#fadein").click(function () {
+                $("#kotak").fadeIn("slow");
+            });
+            $("#fadetime").click(function () {
+                $("#kotak").fadeTo("slow", 0.3);
+            });
+        });
+    </script>
+    <style type="text/css">
+       body {
+        background-color: whitesmoke;
+      }
+      .kotak {
+        justify-content: center;
+        display: flex;
+        height: auto;
+      }
+      #kotak {
+        width: 300px;
+        height: 300px;
+        background: yellow;
+      }
+    </style>
+</head>
+<body>
+    <h1>FADE EFFECT</h1>
+    <div id="kotak"></div>
+    <br>
+    <p>
+        <button id="fadeout">Fade Out</button>
+        <button id="fadein">Fade In</button>
+        <button id="fadetime">Fade In 0.3</button>
+    </p>
+</body>
+</html>

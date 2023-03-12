@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOMBOL TAMPILAN</title>
+    <script src="js/jquery.js"></script>
+    <style>
+        body{
+            text-align: center;
+            padding: 5px;
+        }
+        img{
+            width: 500px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".sembunyi1").click(function () {
+                $("#gambar1").hide("slow")
+            });
+            $(".tampil1").click(function () {
+                $("#gambar1").show("slow")
+            });
+            $(".sembunyi2").click(function () {
+                $("#gambar2").hide("slow")
+            });
+            $(".tampil2").click(function () {
+                $("#gambar2").show("slow")
+            });
+            $(".sembunyi3").click(function () {
+                $("#gambar3").hide("slow")
+            });
+            $(".tampil3").click(function () {
+                $("#gambar3").show("slow")
+            });
+        });
+    </script>
+
+    <h1> TOMBOL SEMBUNYI DAN TAMPILKAN GAMBAR</h1>
+    <button class="sembunyi1">Sembunyikan</button>
+    <button class="tampil1">Tampilkan</button>
+    <p><img id="gambar1" src="img/1.png"></p>
+
+    <button class="sembunyi2">Sembunyikan</button>
+    <button class="tampil2">Tampilkan</button>
+    <p><img id="gambar2" src="img/2.png"></p>
+
+    <button class="sembunyi3">Sembunyikan</button>
+    <button class="tampil3">Tampilkan</button>
+    <p><img id="gambar3" src="img/3.png"></p>
+</body>
+</html>
